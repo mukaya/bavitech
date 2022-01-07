@@ -1,0 +1,62 @@
+@import "./bootstrap/bootstrap";
+@import "./scss/variables";
+@import "./scss/typo";
+
+// sections
+@import "./scss/footer";
+
+// pages
+@import "./scss/page-accueil";
+@import "./scss/about";
+@import "./scss/contact";
+@import "./scss/pagination";
+@import "./scss/header";
+@import "./scss/services";
+*{
+  // border:1px solid red;
+}
+html.no-js.no-svg.sr {
+  margin: 0rem !important;
+}
+div#wpadminbar {
+  display: none !important;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+  .icon-contact{
+    // display: none;
+    position: fixed;
+    width: 3.75rem;
+    height: 3.75rem;
+    right: 2.125rem;
+    top: 50%;
+    z-index: 999;
+  }
+}
+
+.overlay {
+  top: -20rem;
+  position: relative;
+  z-index: 2;
+}
+.triangle-gray {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 48%, 0 93%);
+  clip-path: polygon(0 0, 100% 0, 100% 48%, 0 93%);
+  background: $greyColor;
+  height: 20rem;
+}
+.carre-white {
+  background: rgb(233, 183, 107);
+}
+.container {
+    max-width: 1640px;
+    padding: 0 10rem;
+  }
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 1640px;
+      padding: 0 1rem;
+    }
+  }
+
+

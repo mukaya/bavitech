@@ -1,0 +1,282 @@
+{% extends "base.twig" %}
+{%  block content %}
+	<div id="home">
+	   <a href="{{site.link}}/contact/">
+	   		<img class="icon-contact" src="{{theme.link}}/assets/images/icon-contact.svg" alt="icon">
+	   </a>
+		{# Section header Bavitec #}
+		<div class="section-one-bavitec">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-7">
+						<div class="content scrollBottom">
+							{{post.content}}
+						</div>
+					    <div class="text-sm-center-button">
+							<a href="{{site.link}}/nous-connaitre/"class="button" href="#">EN SAVOIR PLUS+</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-5 d-flex justify-content-center">
+						<img class="scrollBottom" src="{{theme.link}}/assets/images/image-home-header.svg" alt="home-icon">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{# Section  Plus c’est complexe #}
+		<div class="container-fluid section-plus-complexe">
+			<div class="container">
+				<div class="row"  data-aos="fade-up" data-aos-duration="3000">
+					<div class="col-md-10 mx-auto">
+						<div class="row">
+							<div class="col-md-12 mb-5">
+								<h1 class="title-complexe" >{{post.title_complex}}</h1>
+							</div>
+						</div>
+						<div class="row description-content">
+							<div class="col-md-6">
+								{{post.description_complex1}}
+							</div>
+							<div class="col-md-6 mt-5 mt-lg-0 mt-md-0">
+								{{post.description_complex2}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{# Section  communication #}
+		<div class="section-comminucation">
+			<div class="container blog-communication mt-5">
+				<div class="row mb-5 scrollBottom">
+					<div class="col-md-8 communication">
+						<h2>{{post.titre_itc}}</h2>
+						<div>
+							<p>{{post.detail_itc}}</p>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+				<div class="row left-dotted-spaced">
+					<div class="col-md-12">
+						<div class="row scrollBottom">
+							<div class="col-md-6">
+								<div class="blog-tech-right">
+									<h3>{{post.itc_externalisation_informatique}}</h3>
+									<p>{{post.itc_externalisation_informatique_detail}}</p>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+							    <div class="blog-tech">
+									<h3>{{post.itc_reseaux_dentreprise}}</h3>
+									<p>{{post.itc_reseaux_dentreprise_detail}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-6 ict">
+								<div class="blog-tech-right">
+									<h3>{{post.itc_smart_itc}}</h3>
+									<p>{{post.itc_smart_itc_detail}}</p>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+							    <div class="blog-tech">
+									<h3>{{post.itc_telephonie_dentreprise}}</h3>
+									<p>{{post.itc_telephonie_dentreprise_detail}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-6  top">
+								<div class="blog-tech-right">
+									<h3>{{post.itc_office_365}}</h3>
+									<p>{{post.itc_office_365_detail}}</p>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+							    <div class="blog-tech">
+									<h3>{{post.itc_equipements_audiovisuel}}</h3>
+									<p>{{post.itc_equipements_audiovisuel_detail}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-6 top-security">
+								<div class="blog-tech">
+									<h3>{{post.itc_securite_informatique}}</h3>
+									<p>{{post.itc_securite_informatique_detail}}</p>			   
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+								<div class="blog-tech">
+									<h3>{{post.itc_interphonie_audio_video}}</h3>
+									<p>{{post.itc_interphonie_audio_video_detail}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-12">
+								<div>
+									<a href="{{site.link}}/services/ict/" class="button" href="#">EN SAVOIR PLUS+</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{# Sécurité #}
+		<div class="container-fluid blog-security">
+			<div class="container security">
+				<div class="row d-sm-flex scrollBottom">
+					<div class="col-md-8 order-2 order-md-1 order-lg-1">
+						<h2>{{post.Security}}</h2>
+						<div class="content-text">
+							<p>{{post.Description_security}}</p>
+						</div>
+					</div>
+					<div class="col-md-4 image-la order-1 order-md-2 order-lg-2 d-flex justify-content-center">
+						<img class="mt-md-5 mt-lg-5" src="{{theme.link}}/assets/images/security-icon.png" alt="home">
+					</div>
+				</div>
+				<div class="row left-dotted-spaced mt-5 scrollBottom">
+					<div class="col-md-12">
+						<div class="row scrollBottom">
+							<div class="col-md-6">
+								<div class="blog-tech-security">
+									<h3>{{post.security_anti_intrusion}}</h3>
+									<p>{{post.security_anti_intrusion_detail}}</p>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+							    <div class="blog-tech">
+									<h3>{{post.security_gestion_electronique_des_cles}}</h3>
+									<p>{{post.security_gestion_electronique_des_cles_detail}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-6 top-video">
+								<div class="blog-tech-security">
+									<h3>{{post.security_videoprotection}}</h3>
+									<p>{{post.security_videoprotection_detail}}</p>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+								<div class="blog-tech">
+									<h3>{{post.security_gestion_de_parking}}</h3>
+									<p>{{post.security_gestion_de_parking_detail}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-6 top-control">
+								<div class="blog-tech-security">
+									<h3>{{post.security_controle_dacces}}</h3>
+									<p>{{post.security_controle_dacces_detail}}</p>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+								
+							</div>
+						</div>
+						<div class="row scrollBottom">
+							<div class="col-md-12">
+								<div>
+									<a href="{{site.link}}/services/securite/" class="button mt-md-5 mt-lg-5" href="#">EN SAVOIR PLUS+</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{# Section CARE #}
+		<div class="container-fluid blog-cloud">
+			<div class="container mt-5">
+				<div class="row mb-5 scrollBottom">
+					<div class="col-md-8 cloud">
+						<h2>{{post.care_titre}}</h2>
+						<div class="content-text-cloud">
+							<p>{{post.care_detail}}</p>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+				<div class="row left-dotted-spaced scrollBottom">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="blog-tech">
+									<h3>{{post.care_protection_des_personnes}}</h3>
+									<p>{{post.care_protection_des_personnes_detail}}</p>
+									<div class="blog-image-protection">
+										<img class="image-protection scrollBottom"  src="{{theme.link}}/assets/images/protection-icon.png" alt="protection-icon">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1">
+							</div>
+							<div class="col-md-5">
+							    <div class="blog-tech">
+									<h3>{{post.care_appel_malade_et_antierrance}}</h3>
+								    <p>{{post.care_appel_malade_et_antierrance_detail}}</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row scrollBottom">
+							<div class="col-md-12">
+								<div>
+									<a href="{{site.link}}/services/care/" class="button" href="#">EN SAVOIR PLUS+</a>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+
+		{# Section Etude et projet #}
+		
+		{# <div class="container-fluid projet">
+			<div class="container mt-5 mb-5">
+				<div class="row mb-5 scrollBottom">
+					<div class="col-md-8">
+						<h2>{{post.etudes_et_projets}}</h2>
+						<div>
+							<p>{{post.etudes_et_projets_detail}}</p>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div>
+							<a href="{{site.link}}/services/etudes-projets/" class="button" href="#">EN SAVOIR PLUS+</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> #}
+
+	</div>
+{%  endblock %}

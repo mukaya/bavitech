@@ -1,0 +1,112 @@
+{% extends 'base.twig' %}
+{% block content %}
+  <div id="about" >
+    <a href="{{ site.link }}/contact/">
+      <img class="icon-contact"
+        src="{{ theme.link }}/assets/images/icon-contact.svg"
+        alt="icon" />
+    </a>
+    {# Nous connaître #}
+    <section class="about-us container-fluid">
+      <div class="container">
+        <div class="row scrollBottom">
+          <div class="col-md-12 col-sm-12">
+            <h1>
+              Nous connaître
+            </h1>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            {{ post.content }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {# Etat d'esprit - Expérience - Engagement #}
+    <section class="overview container-fluid">
+      <div class="container">
+        {# Etat d'esprit #}
+        <div class="row state_of_mind scrollBottom">
+          <div class="col-md-12 col-sm-12">
+            <h3>
+              {{ post.get_field('state_of_mind') }}
+            </h3>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            {{ post.get_field('description_state_of_mind') }}
+          </div>
+        </div>
+        {# Expérience #}
+        <div class="row experience scrollBottom">
+          <div class="col-md-12 col-sm-12">
+            <h3>
+              {{ post.get_field('experience_title') }}
+            </h3>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            {{ post.get_field('experience_description') }}
+          </div>
+        </div>
+        {# Engagemet #}
+        <div class="row commitment scrollBottom">
+          <div class="col-md-12 col-sm-12">
+            <h3>
+              {{ post.get_field('commitment_title') }}
+            </h3>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            {{ post.get_field('commitment_description') }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {# Equipe & partenaires #}
+    <section class="team_partners container-fluid">
+      <div class="container">
+        {# Equipe #}
+        <div class="row team">
+          <div class="col-md-12 col-sm-12 scrollBottom">
+            <h2>
+              {{ post.get_field('our_team') }}
+            </h2>
+          </div>
+          <div class="col-md-9 col-sm-12 scrollBottom">
+            {{ post.get_field('team_description') }}
+          </div>
+          <div class="col-md-12 d-flex flex-wrap row-cols-2 row-cols-lg-6 g-lg-2 team-list">
+            {% for item in team %}
+              {# {% if item.thumbnail.src %} #}
+              <div class="card card-clean scrollBottom">
+                <img src="{{ item.thumbnail.src }}"
+                  alt="{{ item.title }}"
+                  class="card-img-top img-fluid rounded mx-auto d-block" />
+
+                <div class="card-body">
+                  <p class="card-text small">
+                    {{ item.title }}
+                  </p>
+                  <p class="card-text">
+                    {{ item.job }}
+                  </p>
+                </div>
+              </div>
+              {# {% endif %} #}
+            {% endfor %}
+          </div>
+        </div>
+        {# Partenaires #}
+        <div class="partners">
+          <div class="col-md-12 col-sm-12 scrollBottom">
+            <h2>
+              {{ post.get_field('our_partners') }}
+            </h2>
+          </div>
+          <div class="col-md-9 col-sm-12 scrollBottom">
+            {{ post.get_field('partners_description') }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock %}

@@ -1,0 +1,5 @@
+wp-content
+composer.lock
+test-reports
+reports
+vendor

@@ -1,0 +1,51 @@
+{% block content %}
+
+	<div id="footer">
+		<div class="container">
+			<div class="row blog-footer">
+				<div class="col-lg-2"></div>
+				<div class="col-12 col-lg-8 text-center scrollBottom">
+					<div class="content ">{{footer[0].content}}</div>
+
+					<div class="footer d-block text-center d-lg-flex justify-content-around">
+						<div class="col-12 col-lg-2"></div>
+						<div class="col-12  col-lg-4 m-lg-3">
+							{# <a target="_blank" href="tel:+41 22 594 60 60" class="tel"> #}
+							<a href="tel:{{footer[0].telephone}}">
+							<button type="button" class="btn btn-light contact">{{footer[0].telephone}}</button>								
+							</a>
+						</div>
+						<div class="col-12 col-lg-4 m-lg-3">
+							<a href="{{ site.link }}/contact/">
+								<button type="button" class="btn btn-light contact">{{footer[0].button}}</button>
+							</a>
+						</div>
+						<div class="col-12 col-lg-2"></div>
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+			<div class="row blog-footer-two">
+				<div class="col-12 col-md-9 content-footer-two  d-md-flex text-align-center scrollBottom">
+					{# <span class="content">@Bavitech Systems</span> #}
+					<div class="content2">@Bavitech Systems
+					<a target="_blank" href="https://www.google.com/maps/place/Chem.+du+Ch%C3%A2teau-Bloch+19,+1219+A%C3%AFre,+Suisse/@46.207161,6.0986641,17z/data=!3m1!4b1!4m5!3m4!1s0x478c64a9b495686f:0x72f3030c34988ced!8m2!3d46.207161!4d6.0986641">
+						{{footer[0].adress}}</a></div>
+				</div>
+			<div class="col-12 col-md-3 blog-link">
+					<sapn class="col-2 col-md-2" style="margin-right:1rem">
+						<a target="_blank" href="{{footer[0].link_linkedin}}" title="Partager sur LinkedIn">
+							<img alt="linkedin" src="{{theme.link}}/assets/images/linkedin.svg">
+						</a>
+					</sapn>
+					<span class="col-2 col-md-2">
+						<a target="_blank" href="{{footer[0].link_facebook}}" title="Partager sur Facebook">
+							<img alt="facebook" src="{{theme.link}}/assets/images/facebook.svg">
+						</a>
+					</span>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

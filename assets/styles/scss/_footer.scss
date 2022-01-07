@@ -1,0 +1,135 @@
+#footer{
+    -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+    background-color: $red;
+    width: 100%;
+    z-index: 999;
+    .blog-link{
+        text-align: end;
+    }
+.blog-footer{
+    border-bottom: 1px solid $white;
+    .content {
+        padding-top: 8.438rem;
+        padding-bottom: 1.375rem;
+        font-size: 1.23rem;
+        line-height: 2.313rem;
+        word-break: break-word;
+        color: $white;
+        strong{
+            font-size: 1.4rem;
+            line-height: 1.375rem;
+        }
+    }
+    .footer{
+        padding-bottom: 3.25rem;
+        
+        .tel{
+            text-decoration: none;
+            color: $white;
+            font-size: 1.8rem;
+        }
+        .contact{
+            color: $red;
+            font-size:1rem;
+            padding: 1rem 2.5rem;
+            &:hover{
+                background-color: $black;
+                color: $white;
+                border: .0625rem solid $red;
+            }
+        }
+    }
+}
+    .blog-footer-two{
+        padding: 3.813rem 0 3.563rem 0;
+        a{
+            background-color: $red;
+            color:$red;
+        }
+            .content{
+                font-size: 0.775rem;
+                line-height: 1.125rem;
+                color: $white;
+            }
+            .content2{
+                font-size: 0.775rem;
+                line-height: 1.125rem;
+                color: $white;
+                a{
+                    font-size: 0.775rem;
+                    line-height: 1.125rem;
+                    color: $white;
+                    padding-left: 1rem;
+                    text-decoration: none;
+                }
+            }
+            .content-cookies{
+                font-size: 0.775rem;
+                line-height: 1.125rem;
+                color: $white;
+            } 
+    }
+}
+    
+
+@media screen and (max-width: 972px) {
+    #footer{
+        -webkit-clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+        .blog-link{
+            padding-top: 2rem;
+            text-align: center;
+        }
+        .blog-footer{
+            border-bottom: 1px solid $white;
+            .content {
+                padding-top: 6.688rem;
+                padding-bottom: 2.125rem;
+                font-size: 1rem;
+                line-height: 1.625rem;
+                word-break: break-word;
+                color: $white;
+                margin-bottom: 0rem;
+                strong{
+                    font-size: 1rem;
+                    line-height: 1.625rem;
+                }
+            }
+            .footer{
+                padding-bottom: 1.563rem;
+                
+                .tel{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 1.875rem;
+                   
+                }
+                .contact{
+                    color: $red;
+                    font-size: 0.75rem;
+                    padding: 1rem 5.563rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        .blog-footer-two{
+            padding: 2.125rem 0 2.75rem 0;
+            .content-footer-two{
+                text-align: center !important;
+            }   
+            .content2{
+
+                font-size: 0.875rem;
+                padding-top: 1.25rem;
+                padding-left: 0rem;
+                margin: 0 5rem;
+            }
+            .content-cookies{
+                padding-top: 2.125rem;
+                padding-bottom: 2.125rem;
+            }    
+        }
+    }
+
+  }

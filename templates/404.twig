@@ -1,0 +1,25 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="back-404">
+	<div class="container">
+	 <a href="{{site.link}}/contact/">
+	   		<img class="icon-contact" src="{{theme.link}}/assets/images/icon-contact.svg" alt="icon">
+	   </a>
+		<div class="row">
+			<div class="col-12 col-lg-9 scrollBottom">
+				<h1 class="title scrollBottom">Désolé,<br/> la page que vous cherchez est introuvable</h1>
+			</div>
+			<div class="col-12 col-lg-3"></div>		
+		</div>
+		<div class="row scrollBottom">
+			<div class="col-md-12">
+				<div>
+					<a href="{{site.link}}" class="button" href="#">REVENIR VERS LE SITE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

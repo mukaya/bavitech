@@ -1,0 +1,41 @@
+{% extends "base.twig" %}
+{%  block content %}
+	<div id="service">
+
+	</div>
+	<div class="container">
+		<a href="{{site.link}}/contact/">
+	   		<img class="icon-contact" src="{{theme.link}}/assets/images/icon-contact.svg" alt="icon">
+	   	</a>
+		<div class="row" id="blog">
+			<div class="col-12 col-lg-9 scrollBottom">
+				<h1 class="title scrollBottom">Études & projets</h1>
+				<div class="content scrollBottom">{{post.content}}</div>
+			</div>
+			<div class="col-12 col-lg-3"></div>		
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="blog-two">
+			<div class="col-12 col-lg-4 d-none d-lg-block scrollBottom"  style="padding-top:1.8rem"> 
+			{% if (post.thumbnail)=="" %}
+			{% else %}
+				<img class="img d-none d-lg-block scrollBottom w-100" src="{{post.thumbnail.src}}">
+			{% endif %}
+			</div>
+			<div class="col-12 col-lg-8 scrollBottom">
+			{% for post in etudes___projects %}
+				<h3 class="title scrollBottom">{{post.title}}</h3>
+				<div class="content scrollBottom">{{post.get_field('description')}}</div>
+				{% for image in  post.get_field('icone') %}
+				<div class="col-12 scrollBottom  d-flex justify-content-center d-lg-block">
+					<img class="item-img w-77 scrollBottom" src="{{Image(image).src}}" alt="{{blog.title}}">
+				</div>
+				{% endfor %}
+			{% endfor %}
+			</div>
+				
+		</div>
+	</div>
+
+</div>{%  endblock %}

@@ -1,0 +1,175 @@
+{# {% extends "base.twig" %} #}
+{# {% block content %} #}
+<div id="nav" class="full-menu-color">
+<div id="navbar">
+
+	<div class="container">
+		<div class="row gx-0  d-none d-lg-flex">
+			<div class="col-md-3 col-sm-6  w-23">
+				<a class="site-logo" href="{{site.link}}">
+					<img src="{{theme.link}}/assets/images/bavitech.svg" alt="Bavitech">
+				</a>
+			</div>
+			<div class="col-md-9 col-sm-6 w-77">
+				<div class="d-flex align-items-center justify-content-end">
+					<ul class="main-navigation d-flex align-items-center justify-content-end">
+						{% for item in menu_header.items %}
+						{% if item.children %}
+							
+						<div class="dropdown">	
+						{% if item.current or item.current_item_parent %}					
+							{# <a class="dropdown-title" href="{{item.link}}" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> #}
+							<a class="dropdown-title current" id="dropdownMenuButton1" role="button">
+								{{item.title}}
+							</a>
+							{% else %}
+							<a class="dropdown-title" id="dropdownMenuButton1" role="button">
+								{{item.title}}
+							</a>
+							{% endif %}
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							{% for child in item.children %}
+								{% if child.current %}
+								<li><a class="dropdown-item current" href="{{child.link}}">{{child.title}}</a></li>
+								{% else %}
+								<li><a class="dropdown-item" href="{{child.link}}">{{child.title}}</a></li>
+								{% endif %}
+								
+								{% endfor %}
+								
+							</ul>
+						</div>
+						{% else %}
+							{% if item.current and not item.cta %}
+								<li>
+									<a aria-current="page" href="{{item.link}}" class="current">{{item.title}}</a>
+								</li>
+							{% elseif item.current and item.cta %}
+								<li>
+									<a aria-current="page" class="button" href="{{item.link}}">{{item.title}}</a>
+								</li>
+							{% elseif item.cta %}
+								<li>
+									<a class="button" href="{{item.link}}">{{item.title}}</a>
+								</li>
+							{% else %}
+								<li>
+									<a href="{{item.link}}">{{item.title}}</a>
+								</li>
+								
+							{% endif %}
+							{% endif %}
+							{# {% endfor %} #}
+						{% endfor %}
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+{# Navigation responsive #}
+
+<div id="nav-responsive" class="full-menu-color" >
+	<div class="container align-items-center d-lg-none sticky">
+		<div class="row gx-0">
+			<div class="col-md-9 col-6 w-77">
+				<div class="d-flex align-items-center">
+					<div id="toggle" class="d-lg-none">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6  w-23 d-flex align-items-center justify-content-end">
+				<a class="site-logo" href="{{site.link}}">
+					<img src="{{theme.link}}/assets/images/bavitech-res.svg" alt="Bavitech">
+				</a>
+			</div>
+		</div>
+
+		{# Menu POP-UP #}
+		<div id="menu">
+		<div class="d-flex justify-content-end">
+			<a href="{{site.link}}"><img src="{{theme.link}}/assets/images/bavitech-black.svg" alt="Bavitech" style="padding-right: 1rem;"><a/>
+		</div>
+			<div class="menu-items">
+			<div class="container">
+				<div class="row gx-0">
+					<div class="col-12">
+						<ul class="main-navigation-responsive ">
+							{% for item in menu_responsive.items %}
+								{% if item.current and not item.cta %}
+									<li>
+										<a aria-current="page" href="{{item.link}}" class="current">{{item.title}}</a>
+									</li>
+								{% elseif item.current and item.cta %}
+									<li>
+										<a aria-current="page" class="button" href="{{item.link}}">{{item.title}}</a>
+									</li>
+								{% elseif item.cta %}
+									<li>
+										<a class="button mt-5" href="{{item.link}}">{{item.title}}</a>
+									</li>
+								{% else %}
+									<li>
+										<a href="{{item.link}}">{{item.title}}</a>
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+						<div class="button">
+							<a class="button-tel" href="tel:{{footer[1].telephone}}">
+								{{footer[1].telephone}}
+							</a>
+						</div>
+					</div>
+				</div>
+						<div class="row link d-flex align-items-center justify-content-center">
+							<div class="col-2">
+								<a target="_blank" href="{{footer[1].link_linkedin}}" title="Partager sur LinkedIn">
+									<img alt="linkedin" src="{{theme.link}}/assets/images/linkedin-black.svg">
+								</a>
+							</div>
+							<div class="col-2">
+								<a target="_blank" href="{{footer[1].link_facebook}}" title="Partager sur Facebook">
+									<img alt="facebook" src="{{theme.link}}/assets/images/facebook-black.svg">
+								</a>
+							</div>
+						</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+jQuery(function ($) {
+  // Menu
+  $("#toggle").click(function () {
+    $(this).toggleClass("open");
+    $("#menu").toggleClass("opened");
+  });
+  $("#toggle-news").click(function () {
+    $(this).toggleClass("open");
+    $("#menu").toggleClass("opened");
+  });
+
+	$(function () {
+	var navbar = document.getElementById("navbar");
+	window.onscroll = function () {
+		stickyMenu();
+	};
+	function stickyMenu() {
+		if (window.pageYOffset > 400) {
+		navbar.classList.add("sticky");
+		} else {
+		navbar.classList.remove("sticky");
+		}
+	}
+	});
+
+});
+</script>
+
+{# {% endblock %} #}

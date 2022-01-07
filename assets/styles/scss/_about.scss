@@ -1,0 +1,318 @@
+#about {
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    word-wrap: break-word;
+    z-index: 999;
+  }
+  ol {
+    padding-left: 1rem;
+    li {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 2rem;
+      word-wrap: break-word;
+      padding-left: 1rem;
+    }
+  }
+
+  .about-us {
+    position: relative;
+    width: 100%;
+    padding-top: 7%;
+    height: 52%;
+    background: $greyColor;
+    color: $blackColor;
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 4.063rem;
+      margin: 1rem 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 34.688rem;
+      background: $white;
+      clip-path: polygon(0% 100%, 100% 65%, 100% 100%, 0% 100%);
+    }
+  }
+  .overview {
+    position: relative;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    color: $blackColor;
+    .state_of_mind {
+      h3 {
+        color: $red;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 4.063rem;
+        margin-bottom: 0 !important;
+      }
+    }
+    .experience {
+      padding-top: 2.5rem;
+      h3 {
+        color: $red;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 4.063rem;
+        margin-bottom: 0;
+      }
+    }
+    .commitment {
+      padding-top: 2.5rem;
+      h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0 !important;
+        color: $red;
+        line-height: 4.063rem;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 34.688rem;
+      background: $greyColor;
+      clip-path: polygon(0 100%, 100% 64%, 100% 100%, 0% 100%);
+    }
+  }
+  .team_partners {
+    position: relative;
+    width: 100%;
+    padding-top: 1.3rem;
+    margin-bottom: -5rem;
+    background: $greyColor;
+    color: $blackColor;
+    .team {
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+        word-wrap: break-word;
+        margin-bottom: 0;
+      }
+      h6 {
+        font-weight: bold;
+      }
+      .card {
+        position: relative;
+        margin: 0.6rem !important;
+        padding: 0px !important;
+        width: 9.688rem !important;
+        height: 15.938rem !important;
+        border: 0 !important;
+        background: $greyColor;
+        img {
+          width: 9.688rem;
+          height: 11rem;
+          object-fit: cover;
+        }
+
+        .card-body {
+          padding: 0 !important;
+          p {
+            margin: 0 !important;
+          }
+          .card-text {
+            font-size: 0.8rem;
+            line-height: 0.9rem;
+            padding: 0.2rem;
+            &.small {
+              font-weight: bold;
+              padding: 10px 0 !important;
+            }
+          }
+        }
+      }
+      .other-staff {
+        margin: 0.5rem;
+        .card-title {
+          font-size: 0.8rem;
+          line-height: 0.9rem;
+          padding: 0.2rem;
+          word-wrap: break-word;
+          font-weight: bold;
+        }
+        .card-job {
+          font-size: 0.8rem;
+          line-height: 0.9rem;
+          word-wrap: break-word;
+        }
+      }
+    }
+    .partners {
+      padding-bottom: 10rem;
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 3rem;
+        padding-top: 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+ #about{
+    .about-us,
+  .overview,
+  .team_partners {
+    padding: 1.3rem 0.5rem !important;
+  }
+ }
+}
+@media screen and (max-width: 768px) {
+  #about {
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.875rem;
+      word-wrap: break-word;
+      padding-bottom: 1rem;
+    }
+    ol {
+      li {
+        font-size: 0.9rem;
+      }
+    }
+    .about-us {
+      position: relative;
+      padding: 3rem 1rem 0;
+      height: auto;
+
+      h1 {
+        position: relative;
+        z-index: 999;
+        font-size: 1.9rem;
+        padding: 0.5rem 0;
+      }
+      &::before {
+        right: 0;
+        clip-path: polygon(0 35%, 100% 30%, 100% 100%, 0% 100%);
+      }
+    }
+    .overview {
+      padding: 2rem 1rem 7rem;
+      .state_of_mind {
+        h3 {
+          font-size: 1.49rem;
+        }
+      }
+      .experience {
+        padding-top: 2rem;
+        h3 {
+          font-size: 1.19rem;
+        }
+      }
+      .commitment {
+        padding-top: 2rem;
+        h3 {
+          font-size: 1.49rem;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 34.688rem;
+        background: $greyColor;
+        clip-path: polygon(0 100%, 100% 85%, 100% 100%, 0% 100%);
+      }
+    }
+    .team_partners {
+      position: relative;
+      width: 100%;
+      padding: 1.3rem 1rem;
+      background: $greyColor;
+      color: $blackColor;
+      .team {
+        .team-list {
+          justify-content: center;
+        }
+        h3 {
+          font-size: 0.9rem;
+          font-weight: 400;
+          line-height: 1.875rem;
+          word-wrap: break-word;
+        }
+        h6 {
+          padding-bottom: 1rem;
+        }
+        .card {
+          margin: 0.5rem 0.3rem !important;
+          width: 9rem !important;
+          height: 15rem !important;
+          img {
+            width: 9rem;
+            height: 10rem;
+          }
+          .card-body {
+            padding: 0 !important;
+            p {
+              margin: 0 !important;
+            }
+            .card-text {
+              font-size: 12px;
+              line-height: 0.9rem;
+              padding: 0.2rem;
+              // background: $greyColor;
+              &.small {
+                font-weight: bold;
+                padding: 10px 0 !important;
+              }
+            }
+          }
+        }
+        .other-staff {
+          margin: 0 0 0.4rem 0;
+          padding-right: 0.1rem;
+          .card-title {
+            font-size: 0.8rem;
+          }
+          .card-job {
+            font-size: 0.6rem;
+          }
+        }
+      }
+      .partners {
+        padding-bottom: 5rem;
+      
+        h2 {
+          font-size: 1.79rem;
+          font-weight: bold;
+          line-height: 3rem;
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

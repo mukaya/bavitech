@@ -1,0 +1,46 @@
+{% include 'html-header.twig' %}
+<body>
+	{# {% include './partial/header.twig' %} #}
+	{# <div id="nav-background"></div> #}
+
+	{% if (post.slug == "accueil") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "nous-connaitre") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "services") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "contact") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "ict") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "securite") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "etudes-projets") %}
+		{% include './partial/menu_1.twig' %}
+	{% elseif (post.slug == "care") %}
+		{% include './partial/menu_1.twig' %}
+	{% else %}
+		{% include './partial/menu_1.twig' %}
+	{% endif %}  
+
+
+	{% block content %}{% endblock %}
+
+	{% include './partial/footer.twig' %}
+	{{ function('wp_footer') }}
+	<script>
+		jQuery(function ($) {
+			$(function () {
+				ScrollReveal().reveal(`.scrollBottom`, {
+					distance: '50px',
+					origin: 'bottom',
+					duration: 1000,
+					delay: 200
+						})
+					})
+		});
+	</script>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+</body></html>

@@ -1,0 +1,172 @@
+#contact {
+  *{
+    box-sizing: border-box;
+  }
+   background: $white;
+   .triangle-contact {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 52%, 0 80%);
+      clip-path: polygon(0 0, 100% 0, 100% 52%, 0 80%);
+      background: $greyColor;
+      height: 32rem;
+      z-index: -99;
+     }
+    .section-one{
+      margin-top: -25.75rem;
+      z-index: 100;
+     }
+    .title{
+      font-size: 3.125rem;
+      color: $title-contact-color;
+      margin-bottom: 1rem;
+    }
+  .description{
+     margin-bottom: 3.675rem;
+    p{
+      font-size: 1.375rem;
+      color: $title-contact-color;
+    }
+  }
+  h3{
+    color: $red;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    margin-top: -4.625rem;
+  }
+  .content{
+    .first-line{
+      margin-bottom: 1.25rem;
+    }
+    a{
+      font-size: 1.375rem;
+      color: $title-contact-color;
+      line-height: 2.5rem;
+      text-decoration: none;
+    }
+    p{
+      font-size: 1.375rem;
+      color: $title-contact-color;
+      line-height: 2.5rem;
+    }
+  }
+  #form-id {
+    form {
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid $button-contact-color;
+        color: $button-contact-color;
+        max-width: 100% !important;
+        padding-left: 0;
+        padding-bottom: 1.1875rem;
+        &::placeholder {
+          color: $button-contact-color;
+          font-size: 1rem;
+        }
+      }
+      button {
+        display: block;
+        width: 18.25rem !important;
+        height: 2.875rem;
+        color: $white;
+        background: $red;
+        border: none;
+        font-size: 1rem;
+        margin-top: 2.25rem;
+        margin-bottom: 8.8125rem;
+        border-radius: .225rem;
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 992px) {
+  #contact{
+    .triangle-contact {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 52%, 0 80%);
+      clip-path: polygon(0 0, 100% 0, 100% 52%, 0 80%);
+      background: $greyColor;
+      height: 10rem;
+      z-index: -99;
+     }
+    .section-one{
+      margin-top: 0;
+      z-index: 100;
+     }
+     .title{
+      font-size: 2rem;
+      color: $title-contact-color;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+     h3{
+      color: $red;
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      margin-top: 0;
+   }
+    .description{
+     margin-bottom: 0;
+     margin-top: 1.25rem;
+     text-align: center;
+    p{
+      font-size: 1rem;
+      color: $title-contact-color;
+    }
+   }
+   .content{
+    p{
+      font-size: 1rem;
+      color: $title-contact-color;
+      line-height: 2rem;
+    }
+  }
+
+   .h3-title{
+    color: $red;
+    font-size: 1.75rem;
+    margin-top: 4.375rem;
+   }
+
+   .responsive{
+     background-color: $greyColor;
+     margin-top: 2.875rem;
+   }
+   
+   #form-id {
+    form {
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid $button-contact-color;
+        color: $button-contact-color;
+        max-width: 100% !important;
+        padding-left: 0;
+        padding-bottom: 1.1875rem;
+        &::placeholder {
+          color: $button-contact-color;
+          font-size: 1rem;
+        }
+      }
+      button {
+        display: block;
+        width: 100% !important;
+        height: 2.875rem;
+        color: $white;
+        background: $red;
+        border: none;
+        font-size: 1rem;
+        margin-top: 2.25rem;
+        margin-bottom: 8.8125rem;
+        border-radius: .225rem;
+      }
+    }
+  }
+  }
+}
+

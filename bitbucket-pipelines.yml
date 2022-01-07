@@ -1,0 +1,27 @@
+image: php:7.4-fpm # Choose an image matching your project needs #
+clone:
+  depth: full # SonarCloud scanner needs the full history to assign issues properly
+definitions:
+  services:
+    docker:
+      memory: 2048
+  caches:
+    sonar: ~/.sonar/cache # Caching SonarCloud artifacts will speed up your build
+
+pipelines: # More info here: https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html
+  branches:
+    master:
+      # - step: *build-test-sonarcloud
+      # - step: *check-quality-gate-sonarcloud
+      - step:
+          name: Deploy to Master using SSH
+          script:
+            #update package and install dependancies
+            - apt-get update && apt-get install -qy git curl libmcrypt-dev
+            - docker-php-ext-install pdo_mysql
+            - yes | pecl install mcrypt-1.0.3
+            - apt-get install -y openssh-client
+            #excetue ssh script to update the app in live
+            - ssh asez_bavitech@bavitech.tandemadvertising.ch 'bash -s' < updatelive.sh
+
+

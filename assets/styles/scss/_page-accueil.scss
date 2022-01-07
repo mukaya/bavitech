@@ -1,0 +1,718 @@
+#home {
+  * {
+    box-sizing: border-box;
+  }
+  .left-dotted-spaced {
+    border-left: 0.4rem dotted $red;
+    padding-left: 4.25rem;
+    margin-left: 4.25rem;
+  }
+
+  .projet {
+    background: $white;
+    margin-top: 4.25rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    max-width: 100%;
+
+    h2 {
+      color: $red;
+      font-size: 3.125rem;
+    }
+
+    p {
+      font-size: 1.75rem;
+      color: #393b41;
+      margin-top: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .section-one-bavitec {
+    width: 100%;
+    background: $greyColor;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+
+    .container {
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+    }
+    z-index: -1;
+
+    .content {
+      margin-top: 8.125rem;
+      h1 {
+        font-size: 3.125rem;
+        color: $title-contact-color;
+        margin-bottom: 1.25rem;
+        span {
+          font-weight: bold;
+        }
+      }
+      p {
+        font-size: 1.375rem;
+        color: $title-contact-color;
+        line-height: 2.5rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+    img {
+      position: relative;
+      display: inline-block;
+      z-index: 5;
+      object-fit: cover;
+      bottom: -4rem;
+    }
+  }
+
+  .section-comminucation {
+    background: $greyColor;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10rem;
+    margin-top: -8rem;
+    padding-bottom: 15rem;
+    z-index: 99;
+  }
+
+  .button {
+    display: inline-block;
+    background: $red;
+    color: $white;
+    height: 2rem;
+    width: 10.0625rem;
+    border-radius: 0.1875rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    text-align: center;
+    &:hover {
+      background-color: $black;
+    }
+  }
+
+  .blog-tech {
+    h3 {
+      font-size: 1.75rem;
+      color: $red;
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      color: $title-contact-color;
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    div {
+      img {
+        display: inline-block;
+        width: 8.5rem;
+        height: 5.625rem;
+        object-fit: cover;
+      }
+    }
+  }
+  .top {
+    margin-top: -5rem;
+  }
+  .ict {
+    margin-top: -1.5rem;
+  }
+  .top-security {
+    margin-top: -6rem;
+  }
+  .blog-tech-right {
+    h3 {
+      font-size: 1.75rem;
+      color: $red;
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      color: $title-contact-color;
+      font-size: 1rem;
+      // margin-bottom: 2.5rem;
+    }
+    div {
+      img {
+        display: inline-block;
+        width: 8.5rem;
+        height: 5.625rem;
+        object-fit: cover;
+      }
+    }
+  }
+  .top-video {
+    margin-top: -5.1rem;
+  }
+  .top-control {
+    margin-top: -8.8rem;
+  }
+  .blog-tech-security {
+    h3 {
+      font-size: 1.75rem;
+      color: $red;
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      color: $title-contact-color;
+      font-size: 1rem;
+      // margin-bottom: 2.5rem;
+    }
+    div {
+      img {
+        display: inline-block;
+        width: 8.5rem;
+        height: 5.625rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .blog-image-protection {
+    margin-top: -3.875rem;
+
+    .image-protection {
+      height: 30 !important;
+      object-fit: cover !important;
+      position: relative !important;
+      top: 0 !important;
+      left: -0.4375rem !important;
+    }
+  }
+
+  .section-plus-complexe {
+    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 88%);
+    background: $red;
+    width: 100%;
+    z-index: -1;
+    margin-top: -17.125rem;
+    padding-top: 20rem;
+    padding-bottom: 18rem;
+    color: $white;
+
+    .title-complexe {
+      font-size: 3.125rem;
+      text-align: center;
+    }
+
+    .description-content {
+      h3 {
+        font-size: 1.375rem;
+        margin-bottom: 1.25rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .blog-communication {
+    position: relative;
+    z-index: 0;
+    .communication {
+      z-index: 0;
+      margin-bottom: 1.875rem;
+      h2 {
+        color: $red;
+        font-size: 3.125rem;
+      }
+      p {
+        font-size: 1.75rem;
+        color: $title-contact-color;
+        margin-top: 1.25rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  .blog-security {
+    -webkit-clip-path: polygon(0 21%, 100% 10%, 100% 76%, 0 85%);
+    clip-path: polygon(0 21%, 100% 10%, 100% 76%, 0 85%);
+    z-index: 999;
+    width: 100%;
+    max-width: 100%;
+    background: $white;
+    margin-top: -30rem;
+    padding-top: 20rem;
+    padding-bottom: 30rem;
+
+    img {
+      height: 21.4375rem;
+      object-fit: cover;
+      position: relative;
+      top: 7.5rem;
+    }
+    .security {
+      h2 {
+        font-size: 3.125rem;
+        color: $red;
+        margin-top: 10.25rem;
+      }
+      .content-text {
+        p {
+          font-size: 1.75rem;
+          color: $title-contact-color;
+          margin-top: 1.25rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .blog-cloud {
+    -webkit-clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+    z-index: 999;
+    width: 100%;
+    max-width: 100%;
+    background: $greyColor;
+    margin-top: -30rem;
+    padding-top: 4rem;
+    padding-bottom: 13rem;
+    margin-bottom: -4rem;
+
+    .cloud {
+      h2 {
+        font-size: 3.125rem;
+        color: $red;
+        margin-top: 8.25rem;
+      }
+      .content-text-cloud {
+        p {
+          font-size: 1.75rem;
+          color: $title-contact-color;
+          margin-top: 1.25rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #home {
+    .left-dotted-spaced {
+      border-left: 0.4rem dotted $red;
+      padding-left: 1.25rem;
+      margin-left: 1.25rem;
+    }
+    .text-sm-center-button {
+      text-align: center;
+      margin-top: 1.5625rem;
+    }
+    .section-one-bavitec {
+      width: 100%;
+      background: $greyColor;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 2rem;
+      padding-bottom: 5rem;
+      .container {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+      }
+      z-index: -1;
+      .content {
+        margin-top: 1.125rem;
+        h1 {
+          font-size: 1.4375rem !important;
+          color: $title-contact-color;
+          text-align: center;
+          span {
+            font-weight: 700;
+          }
+        }
+        p {
+          font-size: 1.125rem;
+          color: $title-contact-color;
+        }
+      }
+      img {
+        position: relative;
+        display: inline-block;
+        z-index: 5;
+        object-fit: cover;
+        bottom: -6.75rem !important;
+        max-width: 100% !important;
+      }
+    }
+    .section-plus-complexe {
+      -webkit-clip-path: polygon(0 11%, 100% 7%, 100% 72%, 0 68%);
+      clip-path: polygon(0 11%, 100% 7%, 100% 72%, 0 68%);
+      background: $red;
+      width: 100%;
+      z-index: -5;
+      margin-top: -21.125rem;
+      padding-top: 15rem;
+      padding-bottom: 33rem;
+      color: $white;
+
+      .title-complexe {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+
+      .description-content {
+        h3 {
+          font-size: 1.125rem;
+        }
+        p {
+          font-size: 0.8125rem;
+          margin-bottom: 2.25rem;
+        }
+      }
+    }
+
+    .section-comminucation {
+      background: $greyColor;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 10rem;
+      margin-top: -34rem;
+      padding-bottom: 19rem;
+      z-index: -7;
+    }
+
+    .blog-communication {
+      .communication {
+        margin-bottom: 1.875rem;
+        h2 {
+          color: $red;
+          font-size: 1.75rem;
+        }
+        p {
+          font-size: 1rem;
+          color: $title-contact-color;
+          margin-top: 1.25rem;
+          margin-bottom: -1.5rem;
+        }
+      }
+    }
+
+    .blog-tech {
+      h3 {
+        font-size: 1.375rem;
+        color: $red;
+        margin-bottom: 1.25rem;
+      }
+
+      p {
+        color: $title-contact-color;
+        font-size: 0.8125rem;
+        margin-bottom: 2.5rem;
+      }
+      div {
+        display: none;
+      }
+    }
+    .top {
+      margin-top: 0rem;
+    }
+    .ict {
+      margin-top: 0rem;
+    }
+    .top-security {
+      margin-top: 0rem;
+    }
+    .blog-tech-right {
+      h3 {
+        font-size: 1.375rem;
+        color: $red;
+        margin-bottom: 1.25rem;
+      }
+
+      p {
+        color: $title-contact-color;
+        font-size: 0.8125rem;
+        margin-bottom: 2.5rem;
+      }
+      div {
+        display: none;
+      }
+    }
+    .top-video {
+      margin-top: 0rem;
+    }
+    .top-control {
+      margin-top: 0rem;
+    }
+    .blog-tech-security {
+      h3 {
+        font-size: 1.375rem;
+        color: $red;
+        margin-bottom: 1.25rem;
+      }
+
+      p {
+        color: $title-contact-color;
+        font-size: 0.8125rem;
+        margin-bottom: 2.5rem;
+      }
+      div {
+        display: none;
+      }
+    }
+
+    .blog-security {
+      -webkit-clip-path: polygon(0 11%, 100% 10%, 100% 76%, 0 85%);
+      clip-path: polygon(0 11%, 100% 10%, 100% 76%, 0 85%);
+      z-index: 999;
+      width: 100%;
+      max-width: 100%;
+      background: $white;
+      margin-top: -28rem;
+      padding-top: 20rem;
+      padding-bottom: 37rem;
+
+      img {
+        display: inline-block;
+        position: relative;
+        z-index: 9999 !important;
+        width: 18.5rem;
+        height: 16.3125rem;
+        object-fit: cover;
+        max-width: 100%;
+        top: 3.875rem !important;
+      }
+
+      .security {
+        h2 {
+          font-size: 1.75rem;
+          color: $red;
+          margin-top: 6.875rem !important;
+        }
+        .content-text {
+          p {
+            font-size: 1rem;
+            color: $title-contact-color;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .blog-cloud {
+      -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+      z-index: 999;
+      width: 100%;
+      max-width: 100%;
+      background: $greyColor;
+      margin-top: -35rem;
+      padding-top: 0;
+      padding-bottom: 13rem;
+      margin-bottom: -4rem;
+
+      .cloud {
+        h2 {
+          font-size: 1.75rem;
+          color: $red;
+          margin-top: 8.25rem;
+        }
+        .content-text-cloud {
+          p {
+            font-size: 1rem;
+            color: $title-contact-color;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #home {
+    .section-one-bavitec {
+      width: 100%;
+      background: $greyColor;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 2rem;
+      padding-bottom: 5rem;
+
+      .container {
+        padding-top: 0 !important;
+        padding-bottom: 5rem;
+      }
+      z-index: -1;
+
+      .content {
+        margin-top: 8.125rem;
+        h1 {
+          font-size: 1.875rem;
+          color: $title-contact-color;
+          margin-bottom: 1.25rem;
+          span {
+            font-weight: bold;
+          }
+        }
+        p {
+          font-size: 1.125rem !important;
+          color: $title-contact-color;
+          line-height: 2.5rem;
+          margin-bottom: 1.25rem;
+        }
+      }
+      img {
+        position: relative;
+        display: inline-block;
+        z-index: 5;
+        object-fit: contain !important;
+        bottom: -4rem;
+        max-width: 150%;
+      }
+    }
+    .section-plus-complexe {
+      -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 88%);
+      background: $red;
+      width: 100%;
+      z-index: -1;
+      margin-top: -17.125rem;
+      padding-top: 20rem;
+      padding-bottom: 18rem;
+      color: $white;
+
+      .title-complexe {
+        font-size: 2.125rem !important;
+        text-align: center;
+      }
+
+      .description-content {
+        h3 {
+          font-size: 1.375rem;
+          margin-bottom: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section-comminucation {
+      background: $greyColor;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 10rem;
+      margin-top: -12.625rem !important;
+      padding-bottom: 19rem;
+      z-index: -7;
+    }
+
+    .blog-communication {
+      .communication {
+        margin-bottom: 1.875rem;
+        h2 {
+          color: $red;
+          font-size: 1.95rem;
+        }
+        p {
+          font-size: 1.3rem;
+          color: $title-contact-color;
+          margin-top: 1.25rem;
+          margin-bottom: -1.5rem;
+        }
+      }
+    }
+
+    .projet {
+      background: $white;
+      margin-top: 4.25rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      width: 100%;
+      max-width: 100%;
+
+      h2 {
+        color: $red;
+        font-size: 1.95rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: $title-contact-color;
+        margin-top: 1.25rem;
+        margin-bottom: -1.5rem;
+      }
+    }
+
+    .blog-security {
+      -webkit-clip-path: polygon(0 14%, 100% 10%, 100% 76%, 0 85%);
+      clip-path: polygon(0 14%, 100% 10%, 100% 76%, 0 85%);
+      z-index: 999;
+      width: 100%;
+      max-width: 100%;
+      background: $white;
+      margin-top: -28rem;
+      padding-top: 20rem;
+      padding-bottom: 42rem;
+
+      img {
+        display: inline-block;
+        // position: relative;
+        z-index: 9999;
+        width: 18.5rem;
+        height: 16.3125rem;
+        object-fit: cover;
+        max-width: 100%;
+        top: -9.125rem;
+      }
+
+      .security {
+        h2 {
+          font-size: 1.95rem;
+          color: $red;
+          margin-top: 2.875rem;
+        }
+        .content-text {
+          p {
+            font-size: 1.3rem;
+            color: $title-contact-color;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .blog-cloud {
+      -webkit-clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+      z-index: 999;
+      width: 100%;
+      max-width: 100%;
+      background: $greyColor;
+      margin-top: -30rem;
+      padding-top: 4rem;
+      padding-bottom: 13rem;
+      margin-bottom: -4rem;
+
+      .cloud {
+        h2 {
+          font-size: 1.95rem;
+          color: $red;
+          margin-top: 8.25rem;
+        }
+        .content-text-cloud {
+          p {
+            font-size: 1.3rem;
+            color: $title-contact-color;
+            margin-top: 1.25rem;
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

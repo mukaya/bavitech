@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-md-12">
+		<div id="pagination">
+			{% if posts.pagination.prev %}
+				<a href="{{posts.pagination.prev.link}}" class="prev {{posts.pagination.prev.link|length ? '' : 'invisible'}}">
+					<span class="iconify" data-icon="line-md:chevron-left"></span>
+				</a>
+			{% endif %}
+			<ul>
+				{% for page in posts.pagination.pages %}
+					<li>
+						{% if page.link %}
+							<a class="links" href="{{page.link}}" class="{{page.class}}">{{page.title}}</a>
+						{% else %}
+							<span class="links {{page.class}}">{{page.title}}</span>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+			{% if posts.pagination.next %}
+				<a href="{{posts.pagination.next.link}}" class="next {{posts.pagination.next.link|length ? '' : 'invisible'}}">
+					<span class="iconify" data-icon="fa-solid:chevron-right"></span>
+				</a>
+			{% endif %}
+		</div>
+	</div>
+</div>

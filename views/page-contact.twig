@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+{%  block content %}
+	<div id="contact">
+		<div class="container-fluid triangle-contact"></div>
+		<div class="container">
+			<div class="row scrollBottom">
+				<div class="col-md-11 section-one">
+					<h2 class="title">{{post.titre_nous_contacter}}</h2>
+					<div class="description">
+						<p>{{post.description_nous_contacter}}</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="row scrollBottom responsive">
+				<div class="col-md-6">
+				    <h3 class="h3-title">Nous écrire</h3>
+					<div id="form-id">
+						{% filter shortcodes %}
+							{{post.short_code_id}}
+						{% endfilter %}
+					</div>
+				</div>
+				<div class="col-md-6">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+{%  endblock %}
